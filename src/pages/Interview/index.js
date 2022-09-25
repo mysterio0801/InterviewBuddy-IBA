@@ -1,8 +1,10 @@
 import React from 'react';
-import AppBar from '../components/AppBar';
-import InterviewDetailCard from '../components/InterviewDetailCard';
-import calendar from '../logo/calendar.png';
-function InterviewDetails() {
+import {
+  AppBar,
+  InterviewDetailCard
+} from '../../components';
+import calendar from '../../logo/calendar.png';
+function Interview() {
   return (
     <>
         <AppBar />
@@ -21,4 +23,4 @@ function InterviewDetails() {
   )
 }
 
-export default InterviewDetails
+export default Interview

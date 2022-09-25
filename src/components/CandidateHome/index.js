@@ -1,14 +1,16 @@
 import React from 'react';
-import AppBar from "../components/AppBar";
 import Container from 'react-bootstrap/Container';
-import ScheduledInterviews from "../components/ScheduledInterviewCard";
-import PastInterviewsCard from "../components/PastInterviewsCard";
+import {
+    AppBar, 
+    ScheduledInterviews, 
+    PastInterviewsCard
+} from '../';
 
 function CandidateHome() {
     const userType = 'Candidate'
     return (
         <>
-            <AppBar />
+            <AppBar/>
             <Container className="cont1">
                 <div className="heading2" style={{display:'flex'}}>
                     Scheduled Interviews

@@ -1,10 +1,12 @@
 import React from "react";
-import AppBar from "../components/AppBar";
+import {
+    AppBar,
+    CreateInterviewCard,
+    ScheduledInterviews,
+    PastInterviewsCard
+} from '../'
 import Container from 'react-bootstrap/Container';
-import interviewIcon from '../logo/interview 1.png'
-import ScheduledInterviews from "../components/ScheduledInterviewCard";
-import CreateInterviewCard from "../components/CreateInterviewCard";
-import PastInterviewsCard from "../components/PastInterviewsCard";
+import interviewIcon from '../../logo/interview 1.png'
 
 function Home() {
   return (

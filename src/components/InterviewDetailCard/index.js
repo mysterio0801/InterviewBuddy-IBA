@@ -1,8 +1,8 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
-import user from '../logo/user.png';
-import trash from '../logo/trash.png';
-import edit from '../logo/pencil.png';
+import user from '../../logo/user.png';
+import trash from '../../logo/trash.png';
+import edit from '../../logo/pencil.png';
 
 function InterviewDetailCard() {
     return (

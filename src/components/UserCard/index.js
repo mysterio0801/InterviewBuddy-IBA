@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
-import user from '../logo/user.png';
+import user from '../../logo/user.png';
 
 function UserCard(props) {
     return (

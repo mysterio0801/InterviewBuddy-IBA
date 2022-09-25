@@ -1,10 +1,11 @@
 import React from 'react'
-import AppBar from "../components/AppBar";
+import {
+    AppBar,
+    UserCard
+} from '../../components';
 import Container from 'react-bootstrap/Container';
-import PastInterviewsCard from "../components/PastInterviewsCard";
-import UserCard from '../components/UserCard';
 
-function HomePage() {
+function Home() {
     const userName = '';
     const email = '';
     return (
@@ -34,4 +35,4 @@ function HomePage() {
     )
 }
 
-export default HomePage
+export default Home

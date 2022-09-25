@@ -1,19 +1,22 @@
 import './App.css';
 import React from 'react';
-import Home from './pages/AdminHome';
-import CandidateHome from './pages/CandidateHome';
-import HomePage from './pages/HomePage';
-import InterviewDetails from './pages/InterviewDetails';
-import CreateInterviewPopup from './components/CreateInterviewPopup';
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import {
+  Home, 
+  Dashboard, 
+  Interview
+} from './pages/';
 
 function App() {
   return (
     <div className="App">
-      {/* <Home /> */}
-      {/* <CandidateHome /> */}
-      {/* <HomePage /> */}
-      {/* <InterviewDetails /> */}
-      <CreateInterviewPopup/>
+      <BrowserRouter>
+        <Routes>
+          <Route exact path = "/" element={<Home/>}/>
+          <Route path="/home" element={<Dashboard/>}/>
+          <Route path="/interview/:id" element={<Interview/>}/>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
