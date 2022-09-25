@@ -1,0 +1,297 @@
+.navbar{
+    padding: 12px 0px 12px 24px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cont1{
+    padding: 40px 0px 10px 70px
+}
+
+.heading1{
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.025em;
+    text-transform: capitalize;
+    color: #000000;
+    padding: 0px 0px 15px 0px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.heading2{
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.025em;
+    text-transform: capitalize;
+    color: #000000;
+    padding: 0px 0px 25px 0px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.interviewLogo{
+    padding: 0px 15px 0px 0px;
+}
+
+.create-interview-card{
+    width: 430px;
+    height: 172px;
+    flex-direction: row;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(249.97deg, rgba(6, 188, 251, 0.3) -16.17%, rgba(255, 255, 255, 0) 36.88%);
+    box-shadow: 2px -2px 7px 2px rgba(0, 0, 0, 0.07), -2px 2px 7px 2px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+}
+
+.scheduled-interview-card{
+    width: 430px;
+    height: 172px;
+    background: #FFFFFF;
+    box-shadow: 2px -2px 7px 2px rgba(0, 0, 0, 0.07), -2px 2px 7px 2px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    margin: 0px 28px 0px 0px;
+}
+
+.cont2{
+    padding: 30px 30px;
+}
+
+.card-content{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 50px 30px 50px;
+    height: 70;
+    font-family: 'Raleway', sans-serif;
+}
+
+.logo{
+    width: 40px;
+    height: 40px;
+    padding: 10px 10px;
+}
+
+.share-logo{
+    width: 24px;
+    height: 24px;
+}
+
+.group-logo{
+    width: 24px;
+    height: 24px;
+}
+
+.interview-header{
+    /* width: 390px; */
+    padding: 15px 15px 10px 15px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.interview-title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.date-time{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    flex-direction: row;
+    padding: 0px 0px 0px 15px;
+    color: #9B9B9B;
+}
+
+.date{
+    padding: 0px 20px 0px 0px;
+}
+
+.scheduled-interviews{
+    flex-direction: row;
+}
+
+.card-footer{
+    padding: 60px 15px 15px 15px;
+}
+
+.participants{
+    width: 115px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.group-logo{
+    width: 22px;
+    height: 22px;
+    margin: 0px 10px 0px 0px;
+}
+
+.delete-edit{
+    padding: 0px 20px 5px 210px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.delete-icon{
+    width: 28px;
+    height: 28px;
+    padding: 0px 15px 0px 0px;
+}
+
+.edit-icon{
+    width: 22px;
+    height: 22px;
+}
+
+.delete-icon-pi{
+    width: 28px;
+    height: 28px;
+    padding: 0px 0px 0px 40px;
+}
+
+.user-card{
+    width: 320px;
+    height: 80px;
+    left: 88px;
+    top: 191px;
+    background: #FFFFFF;
+    box-shadow: 2px -2px 7px 2px rgba(0, 0, 0, 0.07), -2px 2px 7px 2px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    margin: 0px 28px 0px 0px;
+}
+
+.user-card-col{
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px;
+}
+
+.user-card-row{
+    flex-direction: column;
+    height: 40px;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+}
+
+.avatar{
+    height: 50px;
+    width: 50px;
+    padding: 0px 15px 0px 0px;
+}
+
+.userName{
+    font-size: 18px;
+}
+
+.userEmail{
+    font-size: 14px;
+    color: #9B9B9B;
+}
+
+.date-id{ left: 68px;
+    top: 297px;
+}
+
+.id-header{
+    padding: 40px 0px 10px 70px;
+    flex-direction: column;
+    height: 70px;
+    color: #9B9B9B;
+}
+
+.id-body{
+    padding: 40px 70px 10px 70px;
+    flex-direction: column;
+}
+
+.id-card{
+    width: 1670px;
+    height: 50px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    flex-direction: row;
+    padding: 20px 20px;
+    align-items: center;
+}
+
+.add-interview-popup-container{
+    /* z-index: 999; */
+    flex-direction: column;
+    align-items: center;
+    background: #FFFFFF;
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.popup-header{
+    width: 95%;
+    height: 15px;
+    padding: 5% 0% 5% 5%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 3px rgba(185, 185, 185, 0.25);
+}
+
+.popup-background{
+    z-index: 100;
+    height: 100vh;
+    width: 100vw;
+    background: #9B9B9B;
+}
+
+.form-input{
+    width: 98%;
+    height: 40px;
+    margin: 0px 0px 15px 0px;
+    padding-left: 2%;
+    background: #FFFFFF;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 4px rgba(95, 95, 95, 0.25);
+}
+
+.form-input-container{
+    width: 370px;
+    padding: 15px 15px 30px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.date-time-group {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.save-button{
+    margin-top: 100px;
+    background-color: #4CAF50;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 12px 36px;
+    border-radius: 8px;
+    border-width: 0px;
+    cursor: pointer;
+}
