@@ -15,7 +15,7 @@ function Dashboard() {
     const [userType, setUserType] = useState(userTypes.Admin);
   return (
     <>
-        {userType===userTypes.Admin ? <AdminHome/> : <CandidateHome/>}
+        {userType===userTypes.Admin ? <AdminHome /> : <CandidateHome/>}
     </>
   )
 }

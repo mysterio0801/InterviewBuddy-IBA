@@ -21,14 +21,6 @@ function CandidateHome() {
                     <ScheduledInterviews userType={userType} />
                 </div>
             </Container>
-            <Container className="cont1">
-                <div className="heading2" style={{display:'flex'}}>
-                    Past Interviews
-                </div>
-                <div className="scheduled-interviews" style={{display: 'flex'}}>
-                    <PastInterviewsCard />
-                </div>
-            </Container>
         </>    
     )
 }

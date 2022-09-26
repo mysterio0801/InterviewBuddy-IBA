@@ -1,13 +1,57 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import {
     AppBar,
     UserCard
 } from '../../components';
 import Container from 'react-bootstrap/Container';
+import axios from "axios";
 
 function Home() {
-    const userName = '';
-    const email = '';
+    const [adminList, setAdminList] = useState([]);
+    const [candidateList, setCandidateList] = useState([]);
+
+    useEffect(()=>{
+        axios.get('http://localhost:8000/users/getUsers/').then((response) => {
+            const data = response.data.data;
+            const admins = data.filter(item=>{
+                return item.user_type==='INTERVIEWER';
+            })
+            const candidates = data.filter(item=>{
+                return item.user_type==='CANDIDATE';
+            })
+            setAdminList(admins);
+            setCandidateList(candidates);
+        });
+    },[]);
+
+    const Admins = () =>{
+        return(
+            <>
+                {
+                    adminList.map(item=>{
+                        return(
+                            <UserCard user_type = {item.user_type} id = {item.id} userName={item.name} email={item.email}/>
+                        )
+                    })
+                }
+            </>
+        )
+    }
+
+    const Candidates = () => {
+        return(
+            <>
+                {
+                    candidateList.map(item=>{
+                        return(
+                            <UserCard user_type = {item.user_type} id = {item.id} userName={item.name} email={item.email}/>
+                        )
+                    })
+                }
+            </>
+        )
+    }
+
     return (
         <>
             <AppBar />
@@ -16,9 +60,7 @@ function Home() {
                     Admins
                 </div>
                 <div className="scheduled-interviews" style={{display: 'flex'}}>
-                    <UserCard userName='Vrishabh Agamya' email='agamya.vrishabh@scaler.com'/>
-                    <UserCard userName='Tanish Agarwal' email='agarwal.tanish@scaler.com'/>
-                    <UserCard userName='Himanshu Vishwakarma' email='himanshu.vishwakarma@scaler.com'/>
+                    {Admins()}
                 </div>
             </Container>
             <Container className="cont1">
@@ -26,9 +68,7 @@ function Home() {
                     Candidates
                 </div>
                 <div className="scheduled-interviews" style={{display: 'flex'}}>
-                    <UserCard userName='Candidate 1' email='candidate1@gmail.com'/>
-                    <UserCard userName='Candidate 2' email='candidate2@gmail.com'/>
-                    <UserCard userName='Candidate 3' email='candidate3@gmail.com'/>
+                    {Candidates()}
                 </div>
             </Container>
         </>

@@ -164,6 +164,7 @@
 }
 
 .user-card{
+    cursor: pointer;
     width: 320px;
     height: 80px;
     left: 88px;
@@ -220,7 +221,7 @@
 }
 
 .id-card{
-    width: 1670px;
+    width: 100%;
     height: 50px;
     background: #FFFFFF;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
@@ -228,16 +229,48 @@
     flex-direction: row;
     padding: 20px 20px;
     align-items: center;
+    justify-content: space-between;
 }
+
+.id-card-header{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
 .add-interview-popup-container{
     /* z-index: 999; */
     flex-direction: column;
     align-items: center;
     background: #FFFFFF;
-    height: 400px;
+    height: 650px;
     width: 400px;
     border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
 }
+
+.break{
+    height: 1px;
+    width: 100%;
+    background:#9B9B9B;
+}
+
+.time-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.time-container-item{
+    width: 45%;
+}
+
+.form-label{
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
 
 .popup-header{
     width: 95%;
@@ -286,7 +319,7 @@
 
 .form-input-container{
     width: 370px;
-    padding: 15px 15px 30px 15px;
+    padding: 15px 15px 15px 15px;
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -299,14 +332,47 @@
 }
 
 .save-button{
-    margin-top: 100px;
     background-color: #4CAF50;
     color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 14px;
-    padding: 12px 36px;
-    border-radius: 8px;
+    border-radius: 5px;
     border-width: 0px;
     cursor: pointer;
+}
+
+.add-participant-container{
+    flex-direction: column;
+    align-items: center;
+    background: #FFFFFF;
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.popup-modal{
+    z-index: 999
+}
+
+.bg-popup{
+    background: rgba(0, 0, 0, 0.07);
+    z-index: 100;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top:0;
+    left: 0;
+}
+
+.flex-row{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.participant-popup{
+    height: 120px;
+    width: 100%;
+    overflow-y: scroll;
 }

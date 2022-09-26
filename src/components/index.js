@@ -7,3 +7,4 @@ export {default as InterviewDetailCard} from './InterviewDetailCard';
 export {default as PastInterviewsCard} from './PastInterviewsCard';
 export {default as ScheduledInterviews} from './ScheduledInterviews';
 export {default as UserCard} from './UserCard';
+export {default as AddParticipant} from './AddParticipant';
